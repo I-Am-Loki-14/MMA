@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+  .menubar {
+    display: block;
+    display: flex;
+    cursor: pointer;
+    border: 0.1px solid yellow;
+    padding: 0 0.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  .navlinks {
+    width: 100%;
+    display: block;
+    top: 68px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #292a2f;
+    text-align: center;
+    clip-path: polygon(0 100%, 100% 0, 0 100%, 100% 0);
+    transition: 0.4s;
+  }
+  .navlinks a {
+    display: block;
+    padding: 1rem 0;
+  }
+  .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}

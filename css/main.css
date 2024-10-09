@@ -8,10 +8,31 @@
   font-family: "Merriweather", serif;
   font-size: 1.5rem;
 }
+.menubar {
+  display: none;
+}
+.searchicons {
+  position: relative;
+
+  display: flex;
+  padding: 0.1rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+}
+.searchicon {
+  cursor: pointer;
+}
+.searchbar {
+  font-size: 0.5rem;
+  padding: 0.4rem 0.3rem;
+  border: none;
+  border-radius: 0.2rem;
+  outline-color: yellow;
+}
 header {
   width: 100%;
   height: 100vh;
-  background-color: orange;
 }
 header .navbar {
   display: flex;
@@ -21,7 +42,10 @@ header .navbar {
   background-color: #292a2f;
 }
 header .navbar .navlinks a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: yellow;
   margin: 0 1rem;
+}
+.navbar .logo-title {
+  color: yellow;
 }
