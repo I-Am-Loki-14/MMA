@@ -3,10 +3,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 .menubar {
   display: none;
@@ -24,25 +24,28 @@
   cursor: pointer;
 }
 .searchbar {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   padding: 0.4rem 0.3rem;
   border: none;
   border-radius: 0.2rem;
   outline-color: yellow;
+  padding: 0.5rem 0.5rem;
 }
 header {
   width: 100%;
-  height: 100vh;
 }
 header .navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
   background-color: #292a2f;
+  z-index: 1000;
+  position: fixed;
 }
 header .navbar .navlinks a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: yellow;
   margin: 0 1rem;
 }
